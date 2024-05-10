@@ -1,0 +1,25 @@
+{
+    "nombre": "Carlos Moya",
+    "equipo": "Equipo A",
+    "especialidad": "Tenis de Campo"
+}
+{
+    "nombre": "Ivan Lendl",
+    "equipo": "Equipo B",
+    "especialidad": "Mentalidad y Estrategia"
+}
+{
+    "nombre": "Patrick Mouratoglou",
+    "equipo": "Equipo C",
+    "especialidad": "Técnica y Preparación Física"
+}
+{
+    "nombre": "Craig Tyzzer",
+    "equipo": "Equipo D",
+    "especialidad": "Coordinación y Estrategia"
+}
+{
+    "nombre": "Severin Luthi",
+    "equipo": "Equipo E",
+    "especialidad": "Táctica y Preparación Física"
+}

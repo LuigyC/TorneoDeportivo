@@ -1,0 +1,25 @@
+{
+    "nombre": "Equipo A",
+    "pais": "España",
+    "jugadores": ["Rafael Nadal", "Garbiñe Muguruza", "David Ferrer"]
+}
+{
+    "nombre": "Equipo B",
+    "pais": "Serbia",
+    "jugadores": ["Novak Djokovic", "Ana Ivanovic", "Janko Tipsarevic"]
+}
+{
+    "nombre": "Equipo C",
+    "pais": "Estados Unidos",
+    "jugadores": ["Serena Williams", "John Isner", "Sloane Stephens"]
+}
+{
+    "nombre": "Equipo D",
+    "pais": "Australia",
+    "jugadores": ["Ashleigh Barty", "Nick Kyrgios", "Sam Stosur"]
+}
+{
+    "nombre": "Equipo E",
+    "pais": "Suiza",
+    "jugadores": ["Roger Federer", "Belinda Bencic", "Stan Wawrinka"]
+}

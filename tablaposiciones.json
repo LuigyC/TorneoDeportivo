@@ -1,0 +1,45 @@
+{
+    "posicion": 1,
+    "equipo": "Equipo A",
+    "partidos_jugados": 3,
+    "victorias": 2,
+    "empates": 0,
+    "derrotas": 1,
+    "puntos": 6
+},
+{
+    "posicion": 2,
+    "equipo": "Equipo D",
+    "partidos_jugados": 3,
+    "victorias": 2,
+    "empates": 0,
+    "derrotas": 1,
+    "puntos": 6
+},
+{
+    "posicion": 3,
+    "equipo": "Equipo B",
+    "partidos_jugados": 3,
+    "victorias": 2,
+    "empates": 0,
+    "derrotas": 1,
+    "puntos": 6
+},
+{
+    "posicion": 4,
+    "equipo": "Equipo E",
+    "partidos_jugados": 3,
+    "victorias": 1,
+    "empates": 0,
+    "derrotas": 2,
+    "puntos": 3
+},
+{
+    "posicion": 5,
+    "equipo": "Equipo C",
+    "partidos_jugados": 3,
+    "victorias": 0,
+    "empates": 0,
+    "derrotas": 3,
+    "puntos": 0
+}

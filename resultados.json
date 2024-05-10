@@ -1,0 +1,35 @@
+{
+    "encuentro": "Encuentro 1",
+    "ganador": "Equipo A",
+    "perdedor": "Equipo B",
+    "sets_ganados": 2,
+    "sets_perdidos": 1
+}
+{
+    "encuentro": "Encuentro 2",
+    "ganador": "Equipo D",
+    "perdedor": "Equipo C",
+    "sets_ganados": 3,
+    "sets_perdidos": 0
+}
+{
+    "encuentro": "Encuentro 3",
+    "ganador": "Equipo A",
+    "perdedor": "Equipo E",
+    "sets_ganados": 1,
+    "sets_perdidos": 2
+}
+{
+    "encuentro": "Encuentro 4",
+    "ganador": "Equipo B",
+    "perdedor": "Equipo C",
+    "sets_ganados": 3,
+    "sets_perdidos": 0
+}
+{
+    "encuentro": "Encuentro 5",
+    "ganador": "Equipo D",
+    "perdedor": "Equipo E",
+    "sets_ganados": 2,
+    "sets_perdidos": 1
+}

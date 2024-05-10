@@ -1,0 +1,30 @@
+{
+    "equipo_local": "Equipo A",
+    "equipo_visitante": "Equipo B",
+    "fecha": "2024-05-15",
+    "resultado": "2-1"
+}
+{
+    "equipo_local": "Equipo C",
+    "equipo_visitante": "Equipo D",
+    "fecha": "2024-05-16",
+    "resultado": "0-3"
+}
+{
+    "equipo_local": "Equipo E",
+    "equipo_visitante": "Equipo A",
+    "fecha": "2024-05-17",
+    "resultado": "1-2"
+}
+{
+    "equipo_local": "Equipo B",
+    "equipo_visitante": "Equipo C",
+    "fecha": "2024-05-18",
+    "resultado": "3-0"
+}
+{
+    "equipo_local": "Equipo D",
+    "equipo_visitante": "Equipo E",
+    "fecha": "2024-05-19",
+    "resultado": "2-1"
+}

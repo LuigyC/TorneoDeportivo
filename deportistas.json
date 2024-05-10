@@ -1,0 +1,35 @@
+{
+    "nombre": "Rafael Nadal",
+    "edad": 35,
+    "nacionalidad": "Español",
+    "ranking": 3,
+    "partidos_jugados": 30
+}
+{
+    "nombre": "Serena Williams",
+    "edad": 39,
+    "nacionalidad": "Estadounidense",
+    "ranking": 8,
+    "partidos_jugados": 25
+}
+{
+    "nombre": "Novak Djokovic",
+    "edad": 34,
+    "nacionalidad": "Serbio",
+    "ranking": 1,
+    "partidos_jugados": 35
+}
+{
+    "nombre": "Ashleigh Barty",
+    "edad": 25,
+    "nacionalidad": "Australiana",
+    "ranking": 2,
+    "partidos_jugados": 28
+}
+{
+    "nombre": "Roger Federer",
+    "edad": 40,
+    "nacionalidad": "Suizo",
+    "ranking": 7,
+    "partidos_jugados": 20
+}
