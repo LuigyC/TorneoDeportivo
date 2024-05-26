@@ -1,0 +1,23 @@
+setduplicadoback=new ReplSetTest({name:"duplicadoset",nodes:3}); print("Confirmacion terminada")
+setduplicadoback.startSet()
+setduplicadoback.initiate()
+conn=new Mongo("DESKTOP-KI76779:20000")
+testDB=conn.getDB("torneoTenis")
+testDB.isMaster()
+
+testDB.deportistas.insertMany([     { "nombre": "Rafael Nadal", "edad": 35, "nacionalidad": "Español", "ranking": 3, "partidos_jugados": 30 },     { "nombre": "Serena Williams", "edad": 39, "nacionalidad": "Estadounidense", "ranking": 8, "partidos_jugados": 25 },     { "nombre": "Novak Djokovic", "edad": 34, "nacionalidad": "Serbio", "ranking": 1, "partidos_jugados": 35 },     { "nombre": "Ashleigh Barty", "edad": 25, "nacionalidad": "Australiana", "ranking": 2, "partidos_jugados": 28 },     { "nombre": "Roger Federer", "edad": 40, "nacionalidad": "Suizo", "ranking": 7, "partidos_jugados": 20 } ])
+
+testDB.deportistas.count();
+testDB.deportistas.find().pretty()
+connSecondary=new Mongo("DESKTOP-KI76779:20001")
+secondaryTestDB=connSecondary.getDB("torneoTenis")
+secondaryTestDB.isMaster()
+connPrimary=new Mongo("DESKTOP-KI76779:20000")
+primaryDB=connPrimary.getDB("torneoTenis")
+primaryDB.isMaster()
+connNewPrimary=new Mongo("localhost:20001")
+newPrimaryDB=connNewPrimary.getDB("torneoTenis")
+primaryDB.adminCommand({shutdown:1})
+newPrimaryDB.isMaster()
+
+
