@@ -1,0 +1,57 @@
+db = (new Mongo("localhost:20006")).getDB("torneoTenis")
+
+db.deportistas.insertMany([
+    { "nombre": "Rafael Nadal", "edad": 35, "nacionalidad": "Español", "ranking": 3, "partidos_jugados": 30 },
+    { "nombre": "Serena Williams", "edad": 39, "nacionalidad": "Estadounidense", "ranking": 8, "partidos_jugados": 25 },
+    { "nombre": "Novak Djokovic", "edad": 34, "nacionalidad": "Serbio", "ranking": 1, "partidos_jugados": 35 },
+    { "nombre": "Ashleigh Barty", "edad": 25, "nacionalidad": "Australiana", "ranking": 2, "partidos_jugados": 28 },
+    { "nombre": "Roger Federer", "edad": 40, "nacionalidad": "Suizo", "ranking": 7, "partidos_jugados": 20 }
+])
+
+# Colección: Equipos
+db.equipos.insertMany([
+    { "nombre": "Equipo A", "pais": "España", "jugadores": ["Rafael Nadal", "Garbiñe Muguruza", "David Ferrer"] },
+    { "nombre": "Equipo B", "pais": "Serbia", "jugadores": ["Novak Djokovic", "Ana Ivanovic", "Janko Tipsarevic"] },
+    { "nombre": "Equipo C", "pais": "Estados Unidos", "jugadores": ["Serena Williams", "John Isner", "Sloane Stephens"] },
+    { "nombre": "Equipo D", "pais": "Australia", "jugadores": ["Ashleigh Barty", "Nick Kyrgios", "Sam Stosur"] },
+    { "nombre": "Equipo E", "pais": "Suiza", "jugadores": ["Roger Federer", "Belinda Bencic", "Stan Wawrinka"] }
+])
+
+# Colección: Entrenadores
+db.entrenadores.insertMany([
+    { "nombre": "Carlos Moya", "equipo": "Equipo A", "especialidad": "Tenis de Campo" },
+    { "nombre": "Ivan Lendl", "equipo": "Equipo B", "especialidad": "Mentalidad y Estrategia" },
+    { "nombre": "Patrick Mouratoglou", "equipo": "Equipo C", "especialidad": "Técnica y Preparación Física" },
+    { "nombre": "Craig Tyzzer", "equipo": "Equipo D", "especialidad": "Coordinación y Estrategia" },
+    { "nombre": "Severin Luthi", "equipo": "Equipo E", "especialidad": "Táctica y Preparación Física" }
+])
+
+db.desportistas.count()
+
+shard1 = new Mongo("localhost:20006")
+
+shard1DB = shard1.getDB("torneoTenis")
+
+shard1DB.deportistas.count()
+
+shard2 = new Mongo("localhost:20000")
+
+shard2DB = shard2.getDB("torneoTenis")
+
+shard2DB.deportistas.count()
+
+shard3 = new Mongo("localhost:20001")
+
+shard3DB = shard3.getDB("torneoTenis")
+
+shard3DB.deportistas.count()
+
+ sh.status()
+ 
+ sh.enableSharding("torneoTenis")
+ 
+ db.deportistas.ensureIndex({deportista :1})
+ 
+ sh.shardCollection("torneoTenis.deportista", {deportista: 1})
+ 
+ 
